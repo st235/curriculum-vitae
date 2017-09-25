@@ -207,3 +207,74 @@ margin-right: 50%;
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
+/* Projects */
+
+.project-header {
+  padding: 25px 10px;
+  font-size: 200%;
+  width: 100%;
+}
+
+.project-wrapper {
+  padding: 0 10px;
+  width: 100%;
+}
+
+.portfolio-project {
+	position: relative;
+  height: auto;
+  padding: 0;
+	background-color: #f7fbde;
+	background-clip: padding-box;
+	border: 10px solid transparent;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.portfolio-project-preview {
+	position: relative;
+	top: 0;
+  height: auto;
+}
+
+.portfolio-project-preview > img {
+	width: 100%;
+  height: auto;
+}
+
+.portfolio-project__description {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	padding: 1.8em 1.3em;
+	text-align: center;
+	background: #fff;
+}
+
+.portfolio-project__name {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.1em;
+	margin: 0;
+	margin-bottom: .2em;
+}
+
+.portfolio-project__category {
+	font-size: .9em;
+	color: #dcd5b2;
+	margin-bottom: .6em;
+}
+
+.portfolio-project-preview,
+.portfolio-project__description {
+	-webkit-transition: all 600ms ease;
+	transition: all 600ms ease;
+}
+
+.portfolio-project:hover .portfolio-project__description {
+	-webkit-transform: translateY(-100%);
+	        transform: translateY(-100%);
+}
+.portfolio-project:hover .portfolio-project-preview {
+	-webkit-transform: translateY(-2.5em);
+	        transform: translateY(-2.5em);
+}
