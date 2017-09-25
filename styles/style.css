@@ -63,6 +63,8 @@ F7996E
 	display: -ms-flexbox; 
 	display: flex;
 	min-height: 100vh;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #home .wrapper {
@@ -70,7 +72,7 @@ F7996E
 	margin: auto;
     margin-right: 10%;
     display: flex;
-    align-items: center;
+	align-items: center;
 }
 @media (min-width: 768px) {
 	#home .wrapper {
@@ -92,3 +94,116 @@ F7996E
 	max-width: 25em;
 }
 /* Endregion */
+
+/* Mouse */
+.mouse-wrapper {
+	width: 100%;
+}
+
+.mouse
+{
+height: 42px;
+width: 24px;
+margin-left: 50%;
+margin-right: 50%;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid #888;
+  top: 170px;
+}
+
+.wheel
+{
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: #888;
+  position: relative;
+  
+  height: 4px;
+  width: 4px;
+  border: 2px solid  #888;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  
+
+}
+
+.wheel
+{
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel
+{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes mouse-wheel
+{
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+/* Endregion */
+
+/* Projects Section */
+#projects { 
+	display: -webkit-box; 
+	display: -ms-flexbox; 
+	display: flex;
+	min-height: 100vh;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* Contact Section */
+#contact { 
+	display: -webkit-box; 
+	display: -ms-flexbox; 
+	display: flex;
+	min-height: 100vh;
+	flex-wrap: wrap;
+	justify-content: center;
+}
