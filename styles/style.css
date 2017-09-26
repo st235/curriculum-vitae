@@ -278,3 +278,30 @@ margin-right: 50%;
 	-webkit-transform: translateY(-2.5em);
 	        transform: translateY(-2.5em);
 }
+
+#map {
+	padding: 0;
+  height: 20em;
+  border: 10px solid transparent;
+  border-radius: 25px;
+}
+
+@media (min-width: 768px) {
+	#map {
+		height: 25em;
+	}
+}
+
+.credit {
+	font-size: 0.8em;
+	margin-top: 4em;
+	text-align: center;
+}
+
+.credit-link, .credit-link:hover {
+	text-decoration: underline !important;
+}
+
+.credit-link:hover {
+  color: #51e6a6;
+}
