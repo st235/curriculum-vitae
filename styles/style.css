@@ -341,11 +341,23 @@ margin-right: 50%;
 
 .portfolio-project__description {
 	-webkit-transition: all 600ms ease;
-	transition: all 600ms ease;
+  transition: all 600ms ease;
 }
 
 .portfolio-project:hover .portfolio-project__description {
 	opacity: 1.0;
+}
+
+#libraries {
+  background-color: #976391;
+  z-index: 0;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+#libraries .project-header {
+  color: white;
 }
 
 #map {
