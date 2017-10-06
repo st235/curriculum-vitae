@@ -24,8 +24,9 @@ F7996E
 /*** Header ***/
 
 .header {
+  position: fixed;
+  display: flex;
 	padding: 1.5em 6% 1em;
-	position: fixed;
 	width: 100%;
 	background: #fff;
 	z-index: 100;
@@ -48,9 +49,7 @@ F7996E
 .social-links {
     width: 50%;
     text-align: right;
-    vertical-align: baseline;
-    margin-right: -4px;
-    float: right;
+    margin-top: auto;
 }
 
 .social-links > li {
