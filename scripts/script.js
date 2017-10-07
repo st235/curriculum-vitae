@@ -10,10 +10,10 @@ sendButton = document.getElementById("submitButton");
 
 sendButton.addEventListener("click", function(e) {
     e.preventDefault();
-    
+
     var http = new XMLHttpRequest();
     var url = "https://cv-mailer.herokuapp.com/email/send";
-    var params = "subject=" + subjectInput.value + "&from=" + emailInput.value + "&message=" + messageInput.value;
+    var params = "subject=" + subjectInput.value + "&from=" + emailInput.value + "&body=" + messageInput.value;
     http.open("POST", url, true);
     http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     
