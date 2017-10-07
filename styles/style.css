@@ -93,8 +93,8 @@ F7996E
 	color: #3b5998;
 }
 
-.social-links > li > a[data-ref='instagram']:hover {
-	color: #bc2a8d;
+.social-links > li > a[data-ref='linkedin']:hover {
+	color: #0077B5;
 }
 
 .social-links > li > a[data-ref='github']:hover {
