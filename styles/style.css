@@ -3,6 +3,10 @@
   padding: 0;
  }
 
+ body {
+   background: #F6F6F6;
+ }
+
 a,
 a:hover,
 a:active,
@@ -16,9 +20,9 @@ a:visited {
 button,
 button:active, 
 input {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	     appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 button,
@@ -31,26 +35,17 @@ textarea {
 	color: inherit;
 }
 
-/*** Palette 
-712F79
-4C4C9D
-48639C
-976391
-F7996E
-***/
-
-/*** Header ***/
-
 .header {
-  position: fixed;
   display: flex;
-	padding: 1.5em 6% 1em;
+  position: fixed;
 	width: 100%;
-	background: #fff;
-	z-index: 100;
+  z-index: 100;
+  background: #fff;
+  opacity: 0.8;
+  padding: 1.5em 6% 1em;
+  border-bottom: 1px  solid #F6F6F6;
 }
 
-/* Navigation */
 .navigation {
     width: 50%;
 }
@@ -61,9 +56,7 @@ F7996E
 .navigation-list > li {
   
 }
-/* Endregion */
 
-/* Social Links */
 .social-links {
     width: 50%;
     text-align: right;
@@ -104,11 +97,8 @@ F7996E
 .social-links > li > a[data-ref='telegram']:hover {
 	color: #0088cc;
 }
-/* Endregion */
 
-/* Home Section */
-
-#home { 
+#me { 
 	display: -webkit-box; 
 	display: -ms-flexbox; 
 	display: flex;
@@ -116,9 +106,10 @@ F7996E
 	flex-wrap: wrap;
   justify-content: center;
   align-items: center; 
+  background: #fff;
 }
 
-#home .wrapper {
+#me .wrapper {
   position: absolute;
   display: flex;
   max-width: 80%;
@@ -133,7 +124,7 @@ F7996E
 }
 
 @media (min-width: 768px) {
-	#home .wrapper {
+	#me .wrapper {
 		margin-right: 24%;
 	}
 }
@@ -250,7 +241,7 @@ margin-right: 50%;
 /* Projects Section */
 #projects { 
 	display: -webkit-box; 
-	display: -ms-flexbox; 
+  display: -ms-flexbox; 
 	display: flex;
 	min-height: 100vh;
   flex-wrap: wrap;
@@ -278,6 +269,14 @@ margin-right: 50%;
 .project-wrapper {
   padding: 0 10px;
   width: 100%;
+}
+
+.portfolio-row {
+  position: relative;
+  height: 450px;
+  padding: 0;
+	background-clip: padding-box;
+  overflow: hidden;
 }
 
 .portfolio-project {
@@ -336,62 +335,36 @@ margin-right: 50%;
   height: 200px !important;
 }
 
-.portfolio-project img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  width: auto;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-}
-.portfolio-project img.portrait {
-  width: 100%;
-  height: auto;
+.small .portfolio-project__description {
+  height: 100% !important;
 }
 
 .portfolio-project__description {
 	position: absolute;
 	bottom: 0%;
   width: 100%;
-  opacity: 0;
+  height: 75%;
   z-index: 11;
 	padding: 1.8em 1.3em;
 	text-align: center;
-  background: #fff;
   border-radius: 0 0 15px 15px;
-}
-
-.portfolio-project__name {
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.1em;
-	margin: 0;
-  margin-bottom: .2em;
-  color: black;
 }
 
 .portfolio-project__desc {
 	font-family: 'Raleway', sans-serif;
-  font-size: 0.8em;
-  color: black;
-}
-
-.portfolio-project__icon {
-  position: absolute;
-	font-size: 5.5em;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-      transform: translate(-50%,-50%);
-  color: white;
+  font-size: 1.2em;
+  text-align: left;
 }
 
 .portfolio-project__category {
 	font-size: .9em;
-	color: inherit;
-	margin-bottom: .6em;
+  color: inherit;
+  width: 100%;
+  margin-bottom: .1em;
+  position: absolute;
+  padding: 1.8em 1.3em;
+  bottom: 0;
+  left: 0;
 }
 
 .portfolio-project__description {
@@ -400,32 +373,41 @@ margin-right: 50%;
 }
 
 .portfolio-project:hover .portfolio-project__description {
-	opacity: 1.0;
+	color: #2e2e2e;
+}
+
+.portfolio-project-screens {
+  display: inline-block;
+  position: absolute;
+}
+
+.portfolio-project-screens.right {
+  right: 0%;
+}
+
+.right {
+  text-align: right;
+}
+
+.portfolio-project-screens img {
+  display: inline-block;
+  max-width: 30%;
+  max-height: 380px;
+  white-space: nowrap;
 }
 
 #libraries {
-  background-color: #A995A1;
+  background: #f6f1ed;
   z-index: 0;
   border-radius: 15px;
   padding: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 #libraries .project-header {
-  color: white;
-}
-
-#map {
-	padding: 0;
-  height: 20em;
-  border: 10px solid transparent;
-  border-radius: 25px;
-}
-
-@media (min-width: 768px) {
-	#map {
-		height: 25em;
-	}
+  color: #2e2e2e;
 }
 
 .credit {
@@ -532,4 +514,13 @@ margin-right: 50%;
 .heading {
   margin-bottom: 25px;
   font-size: 2.5em;
+}
+
+#footer {
+  background: #fff;
+}
+
+.project-inline-title {
+  position: absolute;
+  margin: 25px;
 }
