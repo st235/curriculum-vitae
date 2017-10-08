@@ -372,10 +372,6 @@ margin-right: 50%;
   transition: all 600ms ease;
 }
 
-.portfolio-project:hover .portfolio-project__description {
-	color: #2e2e2e;
-}
-
 .portfolio-project-screens {
   display: inline-block;
   position: absolute;
