@@ -7,14 +7,18 @@
         <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'></link>
         <link rel='stylesheet' href='styles/style.css'></link>
         <script type="text/javascript" src='https://cdn.rawgit.com/mattboldt/typed.js/master/lib/typed.min.js'></script>        
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="container-fluid header">
             <nav class="navigation">
               <ul class="navigation-list">
-                <li><a href="#about" data-ref="about">me</a></li>
-                <li><a href="#portfolio" data-ref="portfolio">projects</a></li>
-                <li><a href="#contact" data-ref="contact">contact</a></li>
+                <li><button id="me-nav" data-ref="about">me</button></li>
+                <li><button id="projects-nav" data-ref="portfolio">projects</button></li>
+                <li><button id="contact-nav" data-ref="contact">contact</button></li>
               </ul>
             </nav>
             <ul class="social-links">
