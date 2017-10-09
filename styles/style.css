@@ -5,6 +5,7 @@
 
  body {
    background: #F6F6F6;
+   overflow-x: hidden;
  }
 
 a,
@@ -375,6 +376,11 @@ margin-right: 50%;
 .portfolio-project-screens {
   display: inline-block;
   position: absolute;
+  width: 650px;
+  height: auto;
+  white-space:nowrap;
+  overflow-x:scroll;
+  overflow-y:hidden;
 }
 
 .portfolio-project-screens.right {
@@ -385,11 +391,19 @@ margin-right: 50%;
   text-align: right;
 }
 
-.portfolio-project-screens img {
+.portfolio-project-screens figure {
   display: inline-block;
-  max-width: 30%;
-  max-height: 380px;
+}
+
+.portfolio-project-screens-img {
+  display: inline-block;
+  /* max-width: 30%; */
+  max-height: 350px;
   white-space: nowrap;
+}
+
+.portfolio-project-screens figcaption {
+  display: none;
 }
 
 #libraries {
