@@ -382,7 +382,7 @@ margin-right: 50%;
 .portfolio-project-screens {
   display: inline-block;
   position: absolute;
-  width: 650px;
+  max-width: 100%;
   height: auto;
   white-space:nowrap;
   overflow-x:scroll;
