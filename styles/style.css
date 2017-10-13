@@ -292,7 +292,7 @@ margin-right: 50%;
   height: 400px;
   background-size: cover;
   margin-bottom: 50px;
-  background-color: #976391;
+  background-color: #48c6ef;
   border-radius: 15px;
   margin-left: 10px;
   margin-right: 10px;
@@ -432,13 +432,6 @@ margin-right: 50%;
 	text-align: center;
 }
 
-.credit-link, .credit-link:hover {
-	text-decoration: underline !important;
-}
-
-.credit-link:hover {
-  color: #51e6a6;
-}
 .contact-form-wrapper {
 	padding: 0 11%;
 	z-index: 9;
@@ -516,7 +509,7 @@ margin-right: 50%;
 }
 .contact-form-el > .input:focus + label,
 .contact-form-el > .input:focus:valid + label {
-	color: #976391;
+	color: #48c6ef;
 }
 .contact-form-el > .input:valid + label {
 	color: #888;
