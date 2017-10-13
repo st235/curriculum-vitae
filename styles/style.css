@@ -55,7 +55,12 @@ textarea {
 }
 
 .navigation-list > li {
-  
+      -webkit-transition: all 250ms linear;
+	  transition: all 250ms linear;
+}
+
+.navigation-list > li:hover {
+  color: #48c6ef;
 }
 
 .social-links {
