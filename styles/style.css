@@ -533,3 +533,7 @@ margin-right: 50%;
   position: absolute;
   margin: 25px;
 }
+
+#submitButton:hover {
+  color: #48c6ef;
+}
