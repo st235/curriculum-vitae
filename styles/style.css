@@ -104,6 +104,10 @@ textarea {
 	color: #0088cc;
 }
 
+.social-links > li > a[data-ref='blog']:hover {
+	color: #dd5d21;
+}
+
 #me { 
 	display: -webkit-box; 
 	display: -ms-flexbox; 
